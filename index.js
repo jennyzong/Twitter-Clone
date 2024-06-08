@@ -6,14 +6,20 @@ tweetBtn.addEventListener('click', function(){
     console.log(tweetInput.value)
 })
 
-function getFeedHtml(){
-    let feedHtml = ``
+document.addEventListener('click', function(){
 /*
 Challenge:
-1. Add data attributes to each of the  <i> tags. You can call
-   them 'reply', 'like', and 'retweet’.
-2. Each data attribute should hold the tweet's uuid.
+1. When a like icon is clicked, this function 
+   should log out the contents of the 'data-like' 
+   data-attribute.
+
+⚠️ Clicking on the page but not on the like icon
+   will log out 'undefined'. That is absolutely fine.
 */
+})
+
+function getFeedHtml(){
+    let feedHtml = ``
     
     tweetsData.forEach(function(tweet){
         feedHtml += `
